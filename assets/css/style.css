@@ -1,0 +1,22 @@
+h1{
+    font-size: 80px
+}
+body{
+    background-image: url("../Images/gray_surface_metal_bands_9716_1920x1080.jpg");
+    font-family: 'Metal Mania', cursive, 'Times New Roman', Times, serif;
+}
+.container{
+    text-align: center;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 0;
+    background-color: red;
+    font-size: 30px;
+    border: 10px;
+    border-style: ridge;
+    border-color: black
+}
+img{
+    width: 500px;
+    height: 500px
+}
