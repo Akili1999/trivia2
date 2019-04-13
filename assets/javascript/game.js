@@ -1,5 +1,5 @@
 $(document).ready(function () {
-   // first I am going to make my questions, much like the word guess game, where one var will have multiple subsets of properties
+   // first I am going to make my questions, much like the word guess game, where one var will have multiple subsets of properties //
    var questions = [
          {
             question: "What was the name of Metallica's first album?", 
@@ -89,7 +89,7 @@ $(document).ready(function () {
       if (clock === 0) {
          unanswered++;
          stop();
-         $("#answer").html("<p>Time is up! The correct answer is: " + select.options[select.answer] + "</p>");
+         $("#answer").html("<p>Too Slow Poser! Correct answer: " + select.options[select.answer] + "</p>");
          hiddenimg();
       }	
    }
@@ -116,13 +116,13 @@ $(document).ready(function () {
    stop();
    correctGuesses++;
       userGuess="";
-      $("#answer").html("<p>Correct!</p>");
+      $("#answer").html("<p>Rock on! That's RIGHT!</p>");
       hiddenimg();
          } else {
          stop();
          incorrectGuesses++;
          userGuess="";
-         $("#answer").html("<p>Wrong! The correct answer is: " + select.options[select.answer] + "</p>");
+         $("#answer").html("<p>Nice Try Poser! The correct answer is: " + select.options[select.answer] + "</p>");
          hiddenimg();
       }
    })
@@ -140,10 +140,10 @@ $(document).ready(function () {
          // This is the results screen, it reveals the restart button //
       if ((incorrectGuesses + correctGuesses + unanswered) === questionsAmount) {
           $("#question").empty();
-                $("#question").html("<h3>Game Over!  Here's how you did: </h3>");
-                     $("#answer").append("<h4> Correct: " + correctGuesses + "</h4>" );
-                         $("#answer").append("<h4> Incorrect: " + incorrectGuesses + "</h4>" );
-                              $("#answer").append("<h4> Unanswered: " + unanswered + "</h4>" );
+                $("#question").html("<h3>That's all folks, here is your results: </h3>");
+                     $("#answer").append("<h4> Correct Answers: " + correctGuesses + "</h4>" );
+                         $("#answer").append("<h4> Incorrect Answers: " + incorrectGuesses + "</h4>" );
+                              $("#answer").append("<h4> Unanswered Questions: " + unanswered + "</h4>" );
                                   $("#restart").show();
          correctGuesses = 0;
          incorrectGuesses = 0;
