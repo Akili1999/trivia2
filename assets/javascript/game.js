@@ -75,14 +75,14 @@ $(document).ready(function () {
       contain.push(questions[i]);
    }
       })
-   //clock start
+   // clock begin //
       function runClock(){
       if (!clockRun) {
       clockControl = setInterval(decrement, 800); // I set the interval to be a little less than a second because there is a little bit of delay when the clock appears //
       clockRun = true;
       }
    }
-   //clock countdown
+   // clock decrease //
       function decrement() {
       $("#timeleft").html("<h3>Time remaining: " + clock + "</h3>");
       clock --;
